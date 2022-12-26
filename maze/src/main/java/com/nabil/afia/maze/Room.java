@@ -43,4 +43,20 @@ public class Room implements MapSite{
 			}
 		}
 	}
+	public void initialize(int n) {
+		// TODO Auto-generated method stub
+		this.numberOfRoomm = n;
+		
+	}
+	public Room(Room r) {
+		numberOfRoomm = r.numberOfRoomm;
+		sides = r.sides;
+	}
+	public Room() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Room clone() {
+		return new Room(this);
+	}
 }
